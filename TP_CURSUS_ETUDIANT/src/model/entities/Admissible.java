@@ -1,9 +1,10 @@
 package model.entities;
 
-import model.reference.Mention;
+import model.entities.exception.EtudiantException;
+import model.entities.reference.Mention;
 
 public interface Admissible {
 
-     Mention calculerMention();
+     Mention calculerMention() throws EtudiantException;
 
 }
